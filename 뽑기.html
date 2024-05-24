@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            뽑기
+        </title>
+        <link rel="stylesheet" href="뽑기화면.css">
+    </head>
+    <body>
+        <h1>뽑기</h1>
+        <button type="button" onclick="RandomDraw()">1회 뽑기</button>
+        <!--<span>-->
+            <button type="button" onclick="RandomDraw10()">10회 뽑기</button>
+        <!--</span>-->
+        <button type="button" onclick="RandomDraw20()">20회 뽑기</button>
+
+        <button type="button" onclick="resetResults()">결과 초기화</button>
+        <div class="overlay" id="overlay"></div>
+        <div class="modal" id="modal">
+            <h2>뽑기 결과</h2>
+            <p id="randomFoodResult"></p>   
+            <ul id="randomFoodList"></ul>
+            <button id="closeModalBtn">닫기</button>
+        </div>
+        <div class="history-container">
+            <div class="history-title">뽑기 기록</div>
+            <ul id="historyList" class="history-list"></ul>
+        </div>
+        <script src="뽑기.js"></script>
+        <script src="음식변수.js"></script>
+        <button type="button" onclick="foodCount()">갯수세기버튼</button>
+    </body>
+</html>
